@@ -6,7 +6,7 @@ Recurso educativo interactivo de la Universidad Nacional Abierta y a Distancia (
 
 Abra `index.html` desde un servidor web (no funciona con doble clic sobre el archivo). Requiere Chrome, Edge o Firefox actualizados con WebGL 2.
 
-Controles: W A S D o flechas para caminar, arrastrar con el mouse para mirar, Shift para correr, Q y E para girar, clic en Play y Stop para escuchar las narraciones.
+Controles: W A S D o flechas para caminar, arrastrar con el mouse para mirar, Shift para correr, Espacio para saltar, Q y E para girar, clic en Play y Stop para escuchar las narraciones.
 
 ## Origen
 
