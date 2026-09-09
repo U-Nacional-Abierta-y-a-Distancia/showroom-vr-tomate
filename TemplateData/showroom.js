@@ -28,6 +28,14 @@
     try { return window.matchMedia && window.matchMedia("(pointer: coarse)").matches; } catch (e) { return false; }
   }
 
+  // En pantallas táctiles, evita que el navegador interprete los dedos como gestos propios
+  // (zoom con dos dedos, desplazamiento, menú contextual) y se los quite al visor.
+  ["touchstart", "touchmove", "touchend", "touchcancel"].forEach(function (type) {
+    canvas.addEventListener(type, function (e) { if (e.cancelable) e.preventDefault(); }, { passive: false });
+  });
+  document.addEventListener("gesturestart", function (e) { e.preventDefault(); }, { passive: false });
+  canvas.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+
   var d = canvas.dataset;
   var config = {
     dataUrl: d.data,

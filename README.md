@@ -4,6 +4,8 @@ Recurso educativo interactivo de la Universidad Nacional Abierta y a Distancia (
 
 ## Cómo usarlo
 
+Al abrir el recurso aparece un panel de bienvenida con su propósito y las orientaciones de uso; el botón "Ayuda" (esquina superior izquierda) o la tecla H lo vuelven a mostrar. La ruta `beta/` contiene la misma versión con un panel de diagnóstico táctil para pruebas.
+
 Abra `index.html` desde un servidor web (no funciona con doble clic sobre el archivo). Requiere Chrome, Edge o Firefox actualizados con WebGL 2.
 
 Controles en computador: W A S D o flechas para caminar, arrastrar con el mouse para mirar, Shift para correr, Espacio para saltar (doble salto en el aire), F para sentarse en las escaleras o la mesa, escalar los posteres caminando de frente y manteniendo W, Q y E para girar, clic en Play y Stop para escuchar las narraciones. En celulares y tabletas: palanca virtual a la izquierda para caminar, arrastrar a la derecha para mirar, botones Saltar, Correr y Sentarse, y tocar Play y Stop.
