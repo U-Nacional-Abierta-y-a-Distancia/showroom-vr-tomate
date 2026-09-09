@@ -22,6 +22,9 @@
       #unity-warning .warning { background: #fff3a0; padding: 10px; border-radius: 6px; }
       #unity-fullscreen { position: absolute; right: 12px; top: 12px; z-index: 4; background: rgba(0,0,0,.5); color: #fff; border: 1px solid rgba(255,255,255,.4); border-radius: 6px; padding: 6px 10px; font-size: 13px; cursor: pointer; display: none; }
       #unity-fullscreen:hover { background: rgba(0,0,0,.75); }
+      #orientation-hint { display: none; position: absolute; left: 50%; top: 14px; transform: translateX(-50%); z-index: 6; background: rgba(0,0,0,.65); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 14px; white-space: nowrap; pointer-events: none; }
+      @media (pointer: coarse) and (orientation: portrait) { #orientation-hint { display: block; } }
+      @media (pointer: coarse) { #unity-fullscreen { display: none !important; } }
     </style>
   </head>
   <body>
@@ -43,6 +46,7 @@
         <p class="note">Este recurso educativo no recoge ni transmite datos personales. Todo se ejecuta en su navegador.</p>
       </div>
       <div id="unity-warning"></div>
+      <div id="orientation-hint">Gira el dispositivo en horizontal para una mejor experiencia</div>
       <button id="unity-fullscreen" title="Pantalla completa">⛶ Pantalla completa</button>
     </div>
     <script src="TemplateData/showroom.js"></script>

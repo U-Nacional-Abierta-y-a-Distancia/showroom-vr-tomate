@@ -24,6 +24,10 @@
     updateVisibility();
   }
 
+  function isCoarsePointer() {
+    try { return window.matchMedia && window.matchMedia("(pointer: coarse)").matches; } catch (e) { return false; }
+  }
+
   var d = canvas.dataset;
   var config = {
     dataUrl: d.data,
@@ -34,8 +38,9 @@
     productName: d.product,
     productVersion: d.version,
     showBanner: showBanner,
-    // Limita la resolución interna en pantallas de alta densidad para cuidar el rendimiento.
-    devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5)
+    // Limita la resolución interna en pantallas de alta densidad para cuidar el rendimiento
+    // (en pantallas táctiles, celulares y tabletas, se usa resolución nativa 1:1).
+    devicePixelRatio: Math.min(window.devicePixelRatio || 1, isCoarsePointer() ? 1.0 : 1.5)
   };
   if (d.memory) config.memoryUrl = d.memory;
   if (d.symbols) config.symbolsUrl = d.symbols;
