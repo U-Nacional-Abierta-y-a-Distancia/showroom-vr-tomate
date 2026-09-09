@@ -8,9 +8,9 @@
     <title>Showroom VR Cadena Productiva del Tomate · UNAD</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <style>
-      html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b1f2a; font-family: "Segoe UI", Arial, sans-serif; }
-      #unity-container { position: absolute; inset: 0; }
-      #unity-canvas { width: 100%; height: 100%; display: block; background: #0b1f2a; outline: none; }
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b1f2a; font-family: "Segoe UI", Arial, sans-serif; overscroll-behavior: none; }
+      #unity-container { position: absolute; inset: 0; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+      #unity-canvas { width: 100%; height: 100%; display: block; background: #0b1f2a; outline: none; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
       #unity-loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #fff; text-align: center; padding: 0 20px; }
       #unity-loading h1 { font-size: 22px; font-weight: 600; margin: 0; }
       #unity-loading p { margin: 0; opacity: .85; font-size: 14px; }
